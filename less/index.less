@@ -7,12 +7,38 @@
 @import "contact";
 @import "footer";
 
+p {
+  font-size: 1.4rem;
 
+  @media @phone {
+      font-size: 1.0rem;
+      padding: 5.5%;
+  }
+}
 
+h4 {
+    font-size: 24px;
+    .skew(20deg, 178deg);
+    padding: 6%;
+}
 
+ul {
+    @media @tablet {
+        min-width: 400px;
+        border-spacing: 5px;
+    }
+    @media @phone {
+        min-width: 97%;
+        border-spacing: 1px;
+    }
+}
 
-
-
+h1 {
+    @media @tablet {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
 
 
 

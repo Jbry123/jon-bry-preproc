@@ -4,9 +4,29 @@ header {
     width: 100%;
     display: flex;
     nav {
+        width: 400%;
+        @media @tablet {
+            margin-left: 5%;
+            width: 45%;
+        }
+        @media @phone {
+            margin-left: 2%;
+            width: 45%;
+        }
         ul {
-            margin-top: 140px; 
-            width: 610px;
+            margin-top: 140px;
+            background: white;
+            float: left;
+            width: 100%;
+            @media @tablet {
+                float: left;
+                width: 200%;
+                background: white;
+            }
+            @media @phone {
+                width:375px;
+                margin-left: 3.2%;
+            }
             justify-content: space-between;
             display: flex;
 
@@ -29,7 +49,19 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-        .rotate(25deg);
+        .rotate(10deg);
+        @media @phone {
+            margin: 0px 5px 0 25px;
+            position: absolute;
+            top: 80px;
+        right: 0;
+        }
+        @media @tablet {
+            margin: 0px 5px 0 25px;
+            position: absolute;
+            top: 80px;
+        left: 30%;
+        }
     }
     
 }// header
